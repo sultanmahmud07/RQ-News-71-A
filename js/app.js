@@ -28,7 +28,7 @@ const displayCatagoreItame = itames =>{
               </div>
               <div class="info ">
                 <h6>${itame.author.name}</h6>
-                <p class="fs-6">${itame.author.published_date}</p>
+                <p id="date" class="fs-6">${itame.author.published_date}</p>
               </div>
             </div>
               </div>
