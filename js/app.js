@@ -35,11 +35,15 @@ const displayCatagoreItame = itames =>{
             </div>
             <div class="col">
               <div class="viwe text-center">
-                View: ${itame.total_view}
+                <i class="fa fa-regular fa-eye"></i> ${itame.total_view}
               </div>
             </div>
             <div class="col">
-              <div class="ratting">*****</div>
+              <div class="ratting"> <i class="fa fa-solid fa-star"></i>
+              <i class="fa fa-solid fa-star"></i>
+              <i class="fa fa-solid fa-star"></i>
+              <i class="fa fa-solid fa-star"></i>
+              <i class="fa fa-light fa-star"></i></div>
             </div>
             <div class="col">
               <div class="button"><button type="button" class="btn btn-outline-warning">Warning</button></div>
