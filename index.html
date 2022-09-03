@@ -29,7 +29,7 @@
                 <a class="nav-link text-primary active" aria-current="page" href="#">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Blog</a>
               </li>
               <li class="nav-item">
                 <img id="user-photo" class="ms-lg-3" src="images/user-image.jpg" alt="">
@@ -75,7 +75,7 @@
       </section>
       <section>
         <div id="catagoris-containd" class="container">
-          <div class="w-75 d-flex justify-content-between">
+          <!-- <div class="w-75 d-flex justify-content-between">
             <div class="img w-25">
               <img src="" alt="">
             </div>
@@ -83,7 +83,7 @@
               <h6>sultan</h6>
               <p>lorem</i></p>
             </div>
-          </div>
+          </div> -->
 
 
           <!-- <div class="card mb-3" >
@@ -118,25 +118,35 @@
               </div>
             </div>
           </div> -->
-          <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Launch static backdrop modal
-</button>
 
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">1.Difference between var let and const </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.
+      </div>
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">2.Difference between  regular function and arrow function</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Since regular functions are constructible, they can be called using the new keyword. However, the arrow functions are only callable and not constructible, i.e arrow functions can never be used as constructor functions. Hence, they can never be invoked with the new keyword.
+      </div>
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">3.Why we use template string</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Template literals provide an easy way to interpolate variables and expressions into strings. The method is called string interpolation.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+        
       </div>
     </div>
   </div>
