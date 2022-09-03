@@ -9,7 +9,7 @@ const displayCatagores2 = users =>{
     const li =document.createElement('li')
     li.innerHTML =`${user.category_name}`
     cataroresBar.appendChild(li)
-    // console.log(li)
+   
     // console.log(user)
   }
   // console.log(users)
