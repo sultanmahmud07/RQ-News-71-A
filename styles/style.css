@@ -1,4 +1,9 @@
-
+.container-modify{
+  width: 94%;
+  margin: auto;
+}
+ 
+ 
  ul li a.active {
   border-bottom: 2px solid blue;
   color: blue;
