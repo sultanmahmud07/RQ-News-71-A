@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ours Blogs</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@300&display=swap" rel="stylesheet">
+
+    <!-- tailwind and daisyUi cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://kit.fontawesome.com/f7f9a2fa8c.js" crossorigin="anonymous"></script>
+
+    
+
+<style>
+    ul li a.active{
+        border-bottom: 2px solid blue;
+        color: blue;
+        padding: 5px;
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container mx-auto">
+        <!--header top -->
+        <div class="flex justify-around  md:flex  md:justify-between py-4 border-b-2">
+            <div>
+                <h2><span class="bg-blue-400 text-white px-4 py-2 rounded-sm">ABC NEWS</span> portal</h2>
+            </div>
+
+            <div>
+                <ul class="flex gap-4" id="right-menu">
+                    <li class="w-20"><a href="index.html">News</a></li>
+                    <li class="w-20"><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- header top end  -->
+
+        <!-- navbar  -->
+        <nav class="mt-4">
+            <ul class="block text-center md:flex justify-between" id="category-container">
+                
+            </ul>
+        </nav>
+        <!-- navbar end -->
+    </header>
+    <!-- header end  -->
+
+    <!-- main  -->
+    <main class="p-5">
+        <div class="container mx-auto py-5 h-screen">
+            
+            <div tabindex="0" class="mt-5 w-3/4 mx-auto collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium">
+                    <h2 class="font-amrBangla text-red-400">প্রশ্ন ১ঃ Var , let , Const এর মধ্যে পার্থক্য কি?</h2>
+                </div>
+                <div class="collapse-content"> 
+                    <p class="font-amrBangla tracking-widest">
+                        1. Var দিয়ে ডিক্লেয়ার করা ভেরিয়েবল  পুনরায় রিএসাইন এবং রিডিক্লেয়ার করা যায়। let দিয়ে ডিক্লেয়ার করা ভেরিয়েবল পুনরায় রিএসাইন করা যায় কিন্তু  রিডিক্লেয়ার করা যায় না আবার Const  দিয়ে ডিক্লেয়ার করা ভেরিয়েবল  পুনরায় রিএসাইন এবং রিডিক্লেয়ার করা যায় না। <br><br>
+                        2. Var Hoisting ইনিশিয়ালাইজ করে , কিন্তু let ও Const Hoisting ইনিশিয়ালাইজ করে না। <br><br>
+                        3. Var হলো গ্লোবাল স্কোপ/ফাংশন স্কোপ, অন্য দিকে let ও Const হলো ব্লোক স্কোপ। <br><br>
+                        4. Var এবং let ইনিশিয়ালাইজেশন ছাড়াই ডিক্লেয়ার করা যায় কিন্তু Const ইনিশিয়ালাইজেশন ছাড়া ডিক্লেয়ার করা যায় না। ইত্যাদি।
+                        
+                    </p>
+                </div>
+              </div>
+
+              
+
+              <div tabindex="0" class="mt-2 w-3/4 mx-auto collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium">
+                    <h2 class="font-amrBangla text-red-400">প্রশ্ন ২ঃ map(), forEach(), filter() ও find() এর মধ্যে পার্থক্য কি? </h2>
+                </div>
+                <div class="collapse-content"> 
+                    <p class="font-amrBangla tracking-widest">
+                        1. Array এর প্রতিটি এলিমেন্টের মধ্যে কোন একটি নির্দিষ্ট কাজ/ফাংশন প্রয়োগ করতে চাইলে , map() মেথড ব্যবহার করা হয়। যেমনঃ কোন একটি array তে অনেক গুলো সংখ্যা আছে, যদি  সেই Array টি প্রতিটি এলিমেন্টের স্কইয়ার ভ্যালু প্রয়োজন পড়ে , তখন সেই ক্ষেত্রেও map() মেথড ব্যবহার করা জাবে ।<br><br>
+
+                        2. map() মেথডের মত , forEach() মেথড একই ধরনের কাজ করে । তবে পার্থক্য হলো ,
+                        map() মেথড ভ্যালু রিটার্ন করে , তবে forEach() মেথড ভ্যালু রিটার্ন করে না।<br><br>
+
+                        3. একটি Array থেকে শর্ত সাপেক্ষে কিছু এলিমেন্ট নিয়ে, নতুন কোন Array তৈরী করার  সময় filter() মেথড ব্যবহার করা যেতে পারে । যে শর্ত দেওয়া থাকবে, ফিল্টার মেথড Array এর প্রতিটি এলিমেন্টের উপড় সেই শর্ত প্রয়োগ করবে। যদি শর্ত ম্যাচ করে, তাহলে সেই সব এলিমেন্ট গুলোকে আরেকটি Array তে রাখতে পারবে।  <br><br>
+
+                        4. find() মেথড ও ফিল্টার মেথড এর মতই কাজ করে তবে, পার্থক্য হলো , ফিল্টার মেথড শর্ত ম্যাচ করা , এলিমেন্ট গুলোকে গ্রহন করে । অন্য দিকে find() মেথড শর্ত ম্যাচ করা এলিমেন্ট গুলোর প্রথম এলিমেন্টটি গ্রহন করে। যেহেতু শুধুমাত্র একটি রিটার্ন ভ্যালু পায় ,তাই এর ফলাফল হিসেবে Array পাওয়া যাবেনা। 
+                        
+                    </p>
+                </div>
+              </div>
+
+              <div tabindex="0" class="mt-2 w-3/4 mx-auto collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium">
+                    <h2 class="font-amrBangla text-red-400">প্রশ্ন ৩ঃ Template String কেন ব্যবহার করা হয় ?</h2>
+                </div>
+                <div class="collapse-content"> 
+                    <p class="font-amrBangla tracking-widest"> 
+                       বিভিন্ন প্রয়োজন সাপেক্ষে Template String কে ব্যবহার করা হয়ে থাকে। আমরা যখন কোন String ডাটার ভিতরে কোন ভেরিয়েবল এর মানব্যবহার করতে যাই , তখন কিন্তু সাধারন ভাবে কনক্যাটিনেশন অপারেটর হিসেবে + ব্যবহার করা হয়ে থাকে। দেখা যায় , এভাবে বার বার + ব্যবহার করতে গিয়ে অনেকটাই জটিলতার সৃষ্টি হয়। সেই ক্ষেত্রে সমাধন হিসেবে Template String ব্যবহার করা হয়। এর ফলে  স্ট্রিং ডাটার যে কোন যায়গায়  ` ${} ` ভেরিয়েবল
+                       এর ভ্যালু ব্যবহার করা জাবে। <br> 
+
+                       এছাড়াও , স্ট্রিং কে মাল্টি লাইনে তৈরী করার কাজে ব্যবহার হয়। আবার কোন এইচটিএমএল এর innerHTML এর ভ্যালু সেট করার সময় ও আমরা Template string ব্যবহার করে থাকি ।
+                    </p>
+                </div>
+              </div>
+        </div>
+    </main>
+    <script src="js/active-menu.js"></script>
+</body>
+</html>
