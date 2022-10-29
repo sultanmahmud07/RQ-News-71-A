@@ -1,27 +1,6 @@
-.bg-color{
-  background-color: rgba(208, 206, 206, 0.347);
-}
-#user-photo{
-  width: 35px;
-  border-radius: 50%;
-  
-}
-#horizontal-line{
-  border-top: 1px solid rgba(119, 114, 114, 0.572);
-}
-.ul-catagori{
-  list-style: none;
-}
-.ul-catagori li{
-  /* font-size: px; */
-  text-transform: capitalize;
-  color: rgb(119, 114, 114);
-  cursor: pointer;
-}
-.ul-catagori li:hover{
-  color: rgb(0, 60, 255);
-}
 
-#date{
-  font-size: 13px !important;
+ ul li a.active {
+  border-bottom: 2px solid blue;
+  color: blue;
+  padding: 5px;
 }
