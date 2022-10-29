@@ -114,7 +114,7 @@ const displayNews = (categoryWiseAllNews) => {
             //step 4: news card a , news gulo dynamic dekhanor jonno card div create kore, tar moddhe card class add korte hobe .
 
             const newsCard = document.createElement("div");
-            newsCard.classList.add("bg-slate-200", "mt-4", "p-2", "rounded-sm");
+            newsCard.classList.add("bg-slate-900", "mt-4", "p-2", "rounded-sm");
 
             //step 5: dynamic vabe card er vitore api theke pawa info gulo dekhate hobe
             newsCard.innerHTML = `
@@ -129,7 +129,7 @@ const displayNews = (categoryWiseAllNews) => {
                   <p>${text_truncate(categoryNews.details, 450, " ...")}</p>
                </div>
   
-               <div class="flex flex-col justify-end border mt-10  ">
+               <div class="flex flex-col justify-end mt-10  ">
                    <div class="flex justify-between items-center">
                        <div class="flex items-center gap-2">
                               <img src="${categoryNews.author.img}" alt="" class="w-10 rounded-full">
